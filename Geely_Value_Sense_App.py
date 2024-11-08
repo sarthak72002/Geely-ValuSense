@@ -2,9 +2,9 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import pickle
-from sklearn.ensemble import RandomForestRegressor
+from sklearn.ensemble import GradientBoostingRegressor
 
-rf = RandomForestRegressor()
+gbm = GradientBoostingRegressor()
 
 with open('final_model_Gradient.pkl', 'rb') as file:
     model = pickle.load(file)
